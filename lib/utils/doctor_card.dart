@@ -14,6 +14,7 @@ class DoctorCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    double height = MediaQuery.of(context).size.height;
     return Padding(
       padding: const EdgeInsets.only(left: 25.0, bottom: 25.0),
       child: Container(
@@ -29,11 +30,11 @@ class DoctorCard extends StatelessWidget {
               borderRadius: BorderRadius.circular(50),
               child: Image.asset(
                 doctorImagePath,
-                height: 100,
+                height: height * 0.090,
               ),
             ),
             SizedBox(
-              height: 10,
+              height: 5,
             ),
             //rating out of 5
             Row(
@@ -49,7 +50,7 @@ class DoctorCard extends StatelessWidget {
               ],
             ),
             SizedBox(
-              height: 10,
+              height: 5,
             ),
             //doctor name
             Text(
@@ -57,7 +58,7 @@ class DoctorCard extends StatelessWidget {
               style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
             ),
             SizedBox(
-              height: 10,
+              height: 5,
             ),
             //doctor title
             Text(doctorProfession + ' 7 y.e'),
