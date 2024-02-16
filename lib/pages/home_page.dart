@@ -36,7 +36,7 @@ class _HomePageState extends State<HomePage> {
                         height: 4,
                       ),
                       Text(
-                        'Jerome Bell',
+                        'Rishi',
                         style: TextStyle(
                           fontSize: 20,
                         ),
